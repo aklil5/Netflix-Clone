@@ -1,6 +1,7 @@
-import axois from "axios";
+import axios from "axios";
+// import axois from the module
 
-const instance = axois.create({
+const instance = axios.create({
     baseURL: 'https://api.themoviedb.org/3'
 });
 
