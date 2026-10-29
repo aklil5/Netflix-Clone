@@ -72,8 +72,17 @@ npm i react-youtube
 # 6. Netflix Project Deployment
 - to deploy you must install "github-pages"
 ```
-npm install --save-dev github-pages
+npm install --save-dev gh-pages
 ```
+
+VITE.CONFIG.JS
+export default defineConfig({
+  base: '/Netflix-Clone/',
+  plugins: [react()],
+})
+
+
+
 
 
 PACKAGE.JSON
@@ -83,6 +92,6 @@ add this line at the very top
 go to scripts section
     between dev and build add
         ```
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+          "predeploy": "npm run build",
+            "deploy": "gh-pages -d dist",
         ```
