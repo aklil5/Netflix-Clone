@@ -70,3 +70,19 @@ npm i react-youtube
 
 
 # 6. Netflix Project Deployment
+- to deploy you must install "github-pages"
+```
+npm install --save-dev github-pages
+```
+
+
+PACKAGE.JSON
+add this line at the very top
+"homepage": "https://aklil5.github.io/Netflix-Clone"
+
+go to scripts section
+    between dev and build add
+        ```
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        ```
