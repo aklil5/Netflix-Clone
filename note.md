@@ -32,28 +32,40 @@
         - [axois.jsx]
         - [requests.jsx]
 
-`npm i axios`
+`npm install axios`
 
 
 ## TO HIDE OUR API KEY
 - create a '.env' file in same folder as package.json
 
 - add the line 
-    `REACT_APP_API_KEY=90430e34`
+    `VITE_API_KEY=90430e34`
 
-    always remember to have **REACT_APP** _YOUR KEY
+    always remember to have **VITE** _YOUR KEY
 
 - go to the requests folder where you previously had ur API_KEY and change it to
-    `const API_KEY = process.env.REACT_APP_API_KEY`
+    `const API_KEY = import.meta.env.VITE_API_KEY`
 
 - then add ".env" to your .gitignore
 
-# 4. Building Netflix Banner
 
+### DONT FORGET TO RESTART YOUR REACT APP
+    npm run dev
+
+# 4. Building Netflix Banner
+- we use axios and requests.
 
 
 # 5. Building Netflix rows
 
+- you can combine the **base url** and either the backdrop_Path or Poster_path to check the image yourself.
+
+- using props you have have multiple Rows
+
+```
+npm i movie-trailer
+npm i react-youtube
+```
 
 
 
